@@ -41,12 +41,12 @@ This project is a portfolio website developed by Yared Abera. It showcases Yared
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Portfolio Live Demo](#)
-
+ 
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
-### Setup
+ ### Setup
 
 Clone this repository to your desired folder:
 
