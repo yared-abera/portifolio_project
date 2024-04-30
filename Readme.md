@@ -40,7 +40,7 @@ This project is a portfolio website developed by Yared Abera. It showcases Yared
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Portfolio Live Demo](#)
+- [Portfolio Live Demo](https://yared-abera.github.io/portifolio_project/)
  
 ## 💻 Getting Started <a name="getting-started"></a>
 
