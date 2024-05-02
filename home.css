@@ -5,13 +5,14 @@
   color: #fff;
   justify-content: center;
 }
-
-.body {
-  background: #000;
-}
-
+ 
 #menu-icon {
   display: none;
+}
+
+/* style for testing purpose */
+body{
+  background: #10c300;
 }
 
 .container_header {
@@ -91,6 +92,7 @@
   background: #e05304;
   color: #f4f1f0;
 }
+
 
 /* second section styles */
 
@@ -172,6 +174,11 @@
   color: #f4f5f7;
 }
 
+
+
+/* style for works section */
+
+
 /* style for mobile device */
 
 @media screen and (max-width: 767px) {
@@ -240,6 +247,9 @@
   }
 
   .headline-section-image {
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 0%;
     order: 3;
     position: relative;
     top: 60%;
