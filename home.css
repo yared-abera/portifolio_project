@@ -11,7 +11,7 @@
 }
 
 *{
-  box-sizing: content-box;  
+  box-sizing: border-box;  
 }
 
 /* style for testing purpose */
@@ -228,10 +228,8 @@ hr{
   padding-bottom:3%;
   padding-left: 0%;
   padding-top: 0%;
-  
-  
+   
 }
-
 
 .multi-stories{
   display: flex;
@@ -286,7 +284,6 @@ border: 1px solid #3e3c3c;
  
 #see-pro-button  {
  padding:2%;
-  
 }
 #see-pro-button button {
   padding: 2% 5%;
@@ -295,33 +292,68 @@ border: 1px solid #3e3c3c;
    border: none; 
    text-transform: capitalize;
  }
- .works-card-contains{
-  grid-column:1/2;
-  padding:0%;
-  margin:0%;
-  height: 80%;
-   
+ .works-card{
+  color: #fff;
+  padding:0px;
+  height: 345px;
+  border: 2px solid chocolate;
 }
 
-.data-dashboard-container{
+ 
+#first-img-card{
+ grid-column:1/2;
+ background-image:url(image/pro-img.png);
+ background-size:cover;
+ padding-top: 85%;
+ 
+}
+ #first-img-card img{
+  width: 900px;
+  height: 345px;
+ } 
+ 
+#data-dashboard-container{
+  background-image:url("image/Mask Group.png");
+  background-size:cover;
+  grid-column:2/3;  
+  padding-top: 40%;
+}
+
+.works-card #see-pro-button{
+  background-color: #e05304;
+  height: 15%;
+   align-items: center;
+   justify-content: center;
+  display: flex;
+  text-transform: capitalize;
+
+}
+
+#pro-art-container{
   background-image:url(image/pro-img.png);
   background-size:cover;
-  border: 2px solid chocolate;
-  grid-column:2/3;
-  height:80%;
+  grid-column:1/2;  
+  padding-top: 50%;
 }
 
+#portfolio{
+  background-image:url("image/Img Placeholder.png");
+  background-size:cover; 
+  backface-visibility: visible; 
+  padding-top: 50%;
+}
 
 .works-section {
-  width: 90%;
+  width: 80%;
   border: 1px solid black;
   margin: auto;
   display: grid;
-  grid-template-columns: 32% 32% 32%;
-  gap: 20px 50px ;  
-  padding: 1%;
+  grid-template-columns:repeat(3,30%) ;
+  gap: 20px 40px ;  
+  padding: 3%;
   margin-top: 20px;  
   margin-bottom: 20px;
+
 }
 
 
