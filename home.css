@@ -393,15 +393,22 @@ border: 1px solid #3e3c3c;
   background-color:#262626;
   display: grid;
   grid-template-columns: 40% 40%;
-  gap: 5%;
-  padding:10%;
+  row-gap:0.01%;
+  column-gap: 5%;
+  padding:5%;
+  padding-left: 15%;
 
+}
+
+.about-section-content{
+  height: 400px;
 }
 
 #horizontal-line{
   grid-column: 1/3;
+  height:1px;
 }
-
+ 
 /* about-img-part */
 #frame-img img{
   width: 500px;
@@ -413,12 +420,43 @@ border: 1px solid #3e3c3c;
   border: 2px solid #c20a0a;
   grid-column:1/2;
   color: #fff;
-  padding-top: 30%;
+   padding-left: 10%;
+   padding-bottom: 10%;
+  
+}
+#about{
+  text-transform: capitalize;
+  font-size: 24px;
+  color: #f55800;
+}
+#get-my-resume-button button{
+  padding: 3%;
+  background-color:#f55800;
+  border: none;
 }
 #about-section-list{
  display: flex;
+ gap: 26%;
+ grid-column: 1/3;
+ border: 2px solid cornflowerblue;
+ color: #fff;
+  height:300px;
+  padding:5%;
 }
 
+#language  h2{
+  padding: 10%;
+}
+#frameworks h2{
+  padding: 10%;
+}
+#skills h2{
+  padding: 10%;
+}
+#about-section-list ul{
+  list-style-type: none;
+  align-items: center;
+}
 
 /* style for mobile device */
 
