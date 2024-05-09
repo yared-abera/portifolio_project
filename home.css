@@ -295,8 +295,8 @@ border: 1px solid #3e3c3c;
  .works-card{
   color: #fff;
   padding:0px;
-  height: 345px;
-  border: 2px solid chocolate;
+  height: 345px; 
+
 }
 
  
@@ -304,13 +304,19 @@ border: 1px solid #3e3c3c;
  grid-column:1/2;
  background-image:url(image/pro-img.png);
  background-size:cover;
- padding-top: 85%;
- 
+ padding-top: 313px;
+  
 }
- #first-img-card img{
-  width: 900px;
-  height: 345px;
- } 
+
+#see-pro{
+  background-color: #e05304;
+  height: 32px;
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content:center;
+}
+   
  
 #data-dashboard-container{
   background-image:url("image/Mask Group.png");
@@ -336,6 +342,8 @@ border: 1px solid #3e3c3c;
   padding-top: 50%;
 }
 
+
+
 #portfolio{
   background-image:url("image/Img Placeholder.png");
   background-size:cover; 
@@ -343,6 +351,30 @@ border: 1px solid #3e3c3c;
   padding-top: 50%;
 }
 
+.works-card:hover{
+  transform: scale(1.1);
+  transition-duration: 3s;
+}
+.works-card ul li{
+  list-style-type: none;
+  background-color: #585656;
+  padding: 5px;
+  margin: 2%;
+
+}
+
+.works-card ul {
+   display: flex;
+
+ 
+}
+
+.works-card ul li a{
+
+  text-decoration: none; 
+  color: #fff;
+  
+}
 .works-section {
   width: 80%;
   border: 1px solid black;
@@ -355,8 +387,37 @@ border: 1px solid #3e3c3c;
   margin-bottom: 20px;
 
 }
+/* about section styles  */
+.about-section {
+  height:200vh;
+  background-color:#262626;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 5%;
+  padding:10%;
 
+}
 
+#horizontal-line{
+  grid-column: 1/3;
+}
+
+/* about-img-part */
+#frame-img img{
+  width: 500px;
+  height: 400px;
+}
+
+/* about-text-container */
+#about-text{
+  border: 2px solid #c20a0a;
+  grid-column:1/2;
+  color: #fff;
+  padding-top: 30%;
+}
+#about-section-list{
+ display: flex;
+}
 
 
 /* style for mobile device */
