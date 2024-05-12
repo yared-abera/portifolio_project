@@ -531,8 +531,6 @@ input[type="submit"]:hover {
   display: flex;
 }
 
-
-
 /* style for mobile device */
 
 @media screen and (max-width: 767px) {
