@@ -438,41 +438,47 @@ hr {
   width: 30%;
 }
 
+.contact-adress-links ul {
+  display: flex;
+  gap: 70%;
+  margin-left: 35%;
+  list-style-type: none;
+}
+
 #about-section-list ul {
   list-style-type: none;
   padding-left: 0%;
 }
 
- /* style for contact forms */
- .contact-forms{
+/* style for contact forms */
+.contact-forms {
   display: flex;
   height: 120vh;
   gap: 1% 5%;
   align-items: center;
   flex-wrap: wrap;
- 
- }
+}
 
- .contact-form-content{
+.contact-form-content {
   height: 50%;
- }
- #contact-text{
- width: 40%;
- font-size: 30px;
+}
+
+#contact-text {
+  width: 40%;
+  font-size: 30px;
   border: 2px solid red;
 }
 
- .contact-form{
-  width:100%;
- }
- #form-container
-{
+.contact-form {
+  width: 100%;
+}
+
+#form-container {
   display: flex;
   justify-content: center;
   width: 55%;
   border: 2px solid red;
   padding: 0%;
-  
 }
 
 .form-row {
@@ -489,7 +495,6 @@ hr {
   flex: 2;
 }
 
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -499,9 +504,9 @@ textarea {
   border-radius: 5px;
 }
 
-#contact-textarea{
+#contact-textarea {
   height: 20vh;
-  }
+}
 
 input[type="submit"] {
   width: 30%;
@@ -517,27 +522,20 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-.contact-adress-links{
+.contact-adress-links {
   border: 2px solid rgb(13, 0, 255);
-  flex-basis:100%;
+  flex-basis: 100%;
   height: 10%;
   position: relative;
   bottom: 0;
   display: flex;
-   
-
 }
 
-.contact-adress-links ul{
-   display: flex;
-   gap: 70%;
-   margin-left: 35%;
-   list-style-type: none;
-}
 
- /* style for mobile device */
 
- @media screen and (max-width: 767px) {
+/* style for mobile device */
+
+@media screen and (max-width: 767px) {
   .headline-section-container {
     flex-direction: column;
     position: relative;
@@ -663,14 +661,29 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: column; /* Stack list items vertically */
     align-items: center;
-    
   }
 
-  .works-header hr{
-   margin-left:10%;
-   width:80%;
+  .works-header hr {
+    margin-left: 10%;
+    width: 80%;
   }
 
+  .contact-forms {
+    height: 120vh;
+  }
 
-     
+  #contact-text {
+    width: 100%;
+    height: auto;
+  }
+
+  #form-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .contact-adress-links ul {
+    display: flex;
+    margin-left: 15%;
+  }
 }
