@@ -6,26 +6,36 @@
     <title>first portifolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="home.css" />  
+    <script src="h.js"></script>
   </head>
   <body> 
-    
-    
+      <div class="menu_toolbar">
+       <div id="x-button"><a href="#close" onclick="hidemenubar()"><img src="image\x-img.png" alt="x-img"></a></div>
+       <ul class="sidebar">
+        <li onclick="hidemenubar()"><a href="#main">Portfolio</a></li>
+        <hr>
+        <li onclick="hidemenubar()"><a href="#_about">About</a></li>
+        <hr>
+        <li onclick="hidemenubar()"> <a href="#_contact">Contact me</a></li>
+        <hr>
+    </ul>
+     </div>
+      
      <section id="toolbar">
       <div class="container_header">
         <div id="my-logo"><img src="image\yada.png" alt="My-logo"></div>
         <div id="nav-links">
           <ul id="nav-lists">
-            <li><a href="#">Portoflio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#main">Portoflio</a></li>
+            <li><a href="#_about">About</a></li>
+            <li><a href="#_contact">Contact</a></li>
             <li><a href="#"> <i class="fa fa-envelope"></i></a></li>
-            
-          </ul>
+            </ul>
         </div>
-        <div id="menu-icon"><a href="#"><i class="fa fa-bars"></i></div>
+        <div id="menu-icon" onclick="showmenubar()"><a href="#"><i class="fa fa-bars"></i></div>
       </div>
     </section>
-    <section  class="headline-section-container">
+    <section  class="headline-section-container" id="main">
       
         <div class="side-bar-menu">
           <ul>
@@ -76,6 +86,7 @@
                         <li id="html-tag">html</li>
                         <li id="bootstrap-tag">bootstrap</li>
                         <li id="ruby-tag">ruby</li>
+
                       </ul>
                     </div>
                     <div id="see-pro-button">
@@ -102,9 +113,7 @@
                     see project
                   </div>
                    
-                
                 </div>
-                
                 
                 <div class="works-card" id="data-dashboard-container">
                     <h1>Data Dashboard 
@@ -194,7 +203,7 @@
 
         </section>
 
-        <section class="about-section">
+        <section class="about-section" id="_about">
 
          <div class="about-section-content"  id="about-text">
           <div id="about">
@@ -261,7 +270,7 @@
           </div>  
            </section>
 
-          <section class="contact-forms">
+          <section class="contact-forms" id="_contact">
             <div class="contact-form-content" id="contact-text">
               <p>I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.</p> 
