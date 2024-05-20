@@ -1,12 +1,13 @@
 /* style for menu-toolbar */
-#x-button{
- border: 2px soild #b33600;
- display: flex;
- justify-content: end;
- margin-bottom: 2%;
- 
+#x-button {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 2%;
 }
- 
+
+.menu_toolbar {
+  display: none;
+}
 
 
 /* style for toolbar */
@@ -43,11 +44,13 @@ body {
   left: 0%;
   right: 0%;
 }
-#toolbar{
+
+#toolbar {
   width: 100%;
-  position:fixed;
+  position: fixed;
   z-index: 100;
 }
+
 .headline-section-image img {
   width: 100%;
   height: 100%;
@@ -135,7 +138,7 @@ body {
   /* border: 2px solid #d65835; */
   width: 100%;
   height: 120vh;
-  background-color: #1c1a19; 
+  background-color: #1c1a19;
   gap: 24px;
 }
 
@@ -545,59 +548,54 @@ input[type="submit"]:hover {
 /* style for mobile device */
 
 @media screen and (max-width: 767px) {
- 
-
-   .menu_toolbar{
+  .menu_toolbar {
     position: fixed;
     list-style-type: none;
     top: 0;
     height: 100vh;
     width: 100%;
     z-index: 999;
-    background-color: #3C3A39;
+    background-color: #3c3a39;
+
     /* backdrop-filter: blur(3px); */
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display:none;
+    display: none;
     flex-direction: column;
-    
   }
 
-  #x-button img{
-    background:#f4f1f0;
-    width:80%;
+  #x-button img {
+    background: #f4f1f0;
+    width: 80%;
     height: 80%;
     margin-right: 30%;
     margin-top: 30%;
   }
-    .sidebar{
-      list-style-type: none;
-    }
-    .sidebar hr{
-      border: 1px solid white;
-      width: 100%;
-    }
-  .sidebar li a{
+
+  .sidebar {
+    list-style-type: none;
+  }
+
+  .sidebar hr {
+    border: 1px solid white;
+    width: 100%;
+  }
+
+  .sidebar li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 36px;
     color: #f4f5f7;
     text-decoration: none;
-  
   }
- 
- 
- 
- 
- 
- 
+
   .headline-section-container {
-    padding-top:10%;
+    padding-top: 10%;
     flex-direction: column;
     position: relative;
     gap: 0%;
     height: 100%;
     overflow: hidden;
   }
-  
+
   .side-bar-menu ul li {
     margin-bottom: 0%;
     padding-right: 10%;
@@ -681,11 +679,6 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
-  }
-
-  .multi-post img {
-    width: 100%; /* Make the image take full width */
     height: auto;
   }
 
