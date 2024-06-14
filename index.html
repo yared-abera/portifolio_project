@@ -284,6 +284,15 @@
                 so if you'd like to chat please get in touch.</p> 
             </div>
             <div class="contact-form-content"  id="form-container">
+ 
+              <form class="contact-form"  id="contacts" action="https://formspree.io/f/moqgbdvw" method="post">
+                <div class="form-row">
+                  <div class="form-group">
+                    <input type="text" name="first_name" maxlength="30"  placeholder="First Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="last_name" maxlength="30"  placeholder="Last Name" required>
+ 
               <form class="contact-form"   action="https://formspree.io/f/moqgbdvw" method="post">
                 <div class="form-row">
                   <div class="form-group">
@@ -291,11 +300,16 @@
                   </div>
                   <div class="form-group">
                     <input type="text" name="last_name" maxlength="30"  placeholder="Last Name">
+ 
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="form-group full-width">
+ 
+                    <input type="email" id="email" name="email" maxlength="30" placeholder="Email Adress" required>
+ 
                     <input type="email" name="email" maxlength="30" placeholder="Email Adress">
+ 
                   </div>
                 </div>
                 <div class="form-row">
@@ -303,6 +317,9 @@
                     <textarea id="contact-textarea" name="message" maxlength="500"  placeholder="Write me something..."></textarea>
                   </div>
                 </div>
+ 
+                <div id="error-message" class="error-message"></div>
+ 
                 <div class="form-row">
               <input type="submit" value="Get in Touch">
                 </div>
@@ -316,6 +333,22 @@
                   <li><a href=""><i class="fa fa-medium"></i></a></li>
                  </ul>   
             </div>
+ 
+            <script>
+              const form = document.getElementById('contacts');
+              const emailInput = document.getElementById('email');
+              const errorMessage = document.getElementById('error-message');
+              form.addEventListener('submit', (event) => {
+                  event.preventDefault();
+                  const email = emailInput.value;
+                  if (email === email.toLowerCase()) {
+                      form.submit();
+                  } else {
+                      errorMessage.textContent = 'Please enter your email in lowercase.';
+                  }
+              });
+          </script>
+ 
            </section>
   </body>
 </html>
